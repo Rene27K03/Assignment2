@@ -1,64 +1,65 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  <!-- Sets the language of the document to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kageepan's Portfolio</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">  <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensures proper rendering on responsive devices -->
+    <title>Kageepan's Portfolio</title>  <!-- Title of the webpage -->
+    <link rel="stylesheet" href="/stylesheets/style.css">  <!-- Links the CSS styling file for the page -->
 </head>
 <body>
-    <%- include('partials/header') %>
+    <%- include('partials/header') %>  <!-- Includes the header partial, allowing for reusable header content -->
 
-    <main>
+    <main>  <!-- Main content area of the webpage -->
+        
         <!-- Home Section -->
-        <section id="home">
-            <h1>Welcome to My Portfolio!</h1>
-            <p>Hi, I'm Kageepan Satheeskumar, a student in Networking and IT Security.</p>
+        <section id="home" class="homex">  <!-- Starts the Home section with an ID and class for styling -->
+            <h1>Welcome to My Portfolio!</h1>  <!-- Main heading for the Home section -->
+            <p>Hi, I'm Kageepan Satheeskumar, a student in Networking and IT Security.</p>  <!-- Introduction paragraph -->
         </section>
 
         <!-- About Me Section -->
-        <section id="about">
-            <h1>About Me</h1>
-            <img src="/images/about-me-image.jpg" alt="Kageepan's Photo" style="width:400px;">
-            <p>My hobbies include gaming, reading manga, watching anime, and enjoying nature views from tall places.</p>
+        <section id="about" class="aboutx">  <!-- Starts the About Me section with an ID and class for styling -->
+            <h1>About Me</h1>  <!-- Main heading for the About Me section -->
+            <img src="/images/about-me-image.jpg" alt="Kageepan's Photo" style="width:400px;">  <!-- Image with alt text -->
+            <p>My hobbies include gaming, reading manga, watching anime, and enjoying nature views from tall places.</p>  <!-- Hobbies description -->
 
-            <video controls style="width:100%; margin-top: 20px;">
-                <source src="/videos/about-me-video.mp4" type="video/mp4">
+            <video controls style="width:100%; margin-top: 20px;">  <!-- Video player with controls, styled for width -->
+                <source src="/videos/about-me-video.mp4" type="video/mp4">  <!-- Source for the video file -->
             </video>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h1>My Projects</h1>
-            <ul>
-                <li><strong>Python</strong>: First year course completed.</li>
-                <li><strong>Object Oriented Programming</strong>: Completed various assignments and completed course during first year.</li>
-                <li><strong>Web Development Assignment</strong>: Current assignment 1 web and script programming.</li>
+        <section id="projects" class="projectx">  <!-- Starts the My Projects section with an ID and class for styling -->
+            <h1>My Projects</h1>  <!-- Main heading for the My Projects section -->
+            <ul>  <!-- Starts an unordered list for the projects -->
+                <li><strong>Python</strong>: First year course completed.</li>  <!-- List item for the Python course -->
+                <li><strong>Object Oriented Programming</strong>: Completed various assignments and completed course during first year.</li>  <!-- List item for the Object Oriented Programming course -->
+                <li><strong>Web Development Assignment</strong>: Current assignment 1 web and script programming.</li>  <!-- List item for the Web Development assignment -->
             </ul>
         </section>
 
         <!-- Contact Me Section -->
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <form action="#" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="contact" class="contactx">  <!-- Starts the Contact Me section with an ID and class for styling -->
+            <h1>Contact Me</h1>  <!-- Main heading for the Contact Me section -->
+            <form action="#" method="POST">  <!-- Starts a form with a placeholder action and POST method for submitting data -->
+                <label for="name">Name:</label>  <!-- Label for the name input field -->
+                <input type="text" id="name" name="name" required>  <!-- Input field for the user's name, marked as required -->
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>  <!-- Label for the email input field -->
+                <input type="email" id="email" name="email" required>  <!-- Input field for the user's email, marked as required -->
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label for="phone">Phone:</label>  <!-- Label for the phone input field -->
+                <input type="tel" id="phone" name="phone">  <!-- Input field for the user's phone number -->
 
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" required></textarea>
+                <label for="comments">Comments:</label>  <!-- Label for the comments textarea -->
+                <textarea id="comments" name="comments" required></textarea>  <!-- Textarea for additional comments, marked as required -->
 
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button>  <!-- Submit button for the form -->
             </form>
         </section>
     </main>
 
-    <%- include('partials/footer') %>
+    <%- include('partials/footer') %>  <!-- Includes the footer partial, allowing for reusable footer content -->
 </body>
 </html>

@@ -1,16 +1,18 @@
- 
-  <!-- This Command Will Link The Css Styling To This .ejs File -->
- <link rel="stylesheet" href="/stylesheets/style.css">
- 
- <!-- About Me Section -->
 
-<%- include('partials/header') %>
-<section id="about" class="about-me" >
-    <h1>About Me</h1>
-    <img src="/images/about-me-image.jpg" alt="Kageepan's Photo" style="width:400px;">
-    <p>My hobbies include gaming, reading manga, watching anime, and enjoying nature views from tall places.</p>
-    <video controls style="width:100%; margin-top: 20px;">
-        <source src="/videos/about-me-video.mp4" type="video/mp4">
+<!-- This command will link the CSS styling to this .ejs file -->
+<link rel="stylesheet" href="/stylesheets/style.css">
+
+<!-- About Me Section -->
+<%- include('partials/header') %>  <!-- Includes the header partial, allowing for reusable header content -->
+
+<section id="about" class="about-me">  <!-- Starts the About Me section with an ID and class for styling -->
+    <h1>About Me</h1>  <!-- Main heading for the About Me section -->
+    <img src="/images/about-me-image.jpg" alt="Kageepan's Photo" style="width:400px;">  <!-- Image of Kageepan with a specified width -->
+    <p>My hobbies include gaming, reading manga, watching anime, and enjoying nature views from tall places.</p>  <!-- Paragraph describing hobbies -->
+    <video controls style="width:100%; margin-top: 20px;">  <!-- Video element with controls and full width -->
+        <source src="/videos/about-me-video.mp4" type="video/mp4">  <!-- Source for the video, specifying the type -->
     </video>
 </section>
-<%- include('partials/footer') %>
+
+<%- include('partials/footer') %>  <!-- Includes the footer partial, allowing for reusable footer content -->
+

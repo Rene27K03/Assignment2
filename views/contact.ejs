@@ -1,19 +1,28 @@
  
- <link rel="stylesheet" href="/stylesheets/style.css">
+<link rel="stylesheet" href="/stylesheets/style.css">  
 
-<%- include('partials/header') %>
-<section id="contact" class="contact">
-    <h1>Contact Me</h1>
-    <form action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" required></textarea>
-        <button type="submit">Submit</button>
+<%- include('partials/header') %>  <!-- Includes the header partial, allowing for reusable header content -->
+
+<section id="contact" class="contact">  <!-- Starts the Contact Me section with an ID and class for styling -->
+    <h1>Contact Me</h1>  <!-- Main heading for the Contact Me section -->
+    
+    <form action="#" method="POST">  <!-- Starts a form with a placeholder action (should be replaced with the actual endpoint) and POST method for submitting data -->
+        <label for="name">Name:</label>  <!-- Label for the name input field -->
+        <input type="text" id="name" name="name" required>  <!-- Input field for the user's name, marked as required -->
+        
+        <label for="email">Email:</label>  <!-- Label for the email input field -->
+        <input type="email" id="email" name="email" required>  <!-- Input field for the user's email, marked as required -->
+        
+        <label for="phone">Phone:</label>  <!-- Label for the phone input field -->
+        <input type="tel" id="phone" name="phone" >  <!-- Input field for the user's phone number -->
+        
+        <label for="comments">Comments:</label>  <!-- Label for the comments textarea -->
+        <textarea id="comments" name="comments" required></textarea>  <!-- Textarea for additional comments, marked as required -->
+        
+        <button type="submit">Submit</button>  <!-- Submit button for the form -->
     </form>
 </section>
-<%- include('partials/footer') %>
+
+<%- include('partials/footer') %>  <!-- Includes the footer partial, allowing for reusable footer content -->
+
+
