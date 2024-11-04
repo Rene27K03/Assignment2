@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, rgb(195, 231, 15), rgb(250, 22, 162)); /* 45-degree linear gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with linear gradient */
+header {
+    background-color: darkblue; /* Dark Bluue color */
+    padding: 1rem;  /* Spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: burlywood;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 4rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(171, 42, 171);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /*relative  function to avoid overlap */
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kageepan's Portfolio</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to My Portfolio!</h1>
+            <p>Hi, I'm Kageepan Satheeskumar, a student in Networking and IT Security.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <img src="/images/about-me-image.jpg" alt="Kageepan's Photo" style="width:400px;">
+            <p>My hobbies include gaming, reading manga, watching anime, and enjoying nature views from tall places.</p>
+
+            <video controls style="width:100%; margin-top: 20px;">
+                <source src="/videos/about-me-video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>My Projects</h1>
+            <ul>
+                <li><strong>Python</strong>: First year course completed.</li>
+                <li><strong>Object Oriented Programming</strong>: Completed various assignments and completed course during first year.</li>
+                <li><strong>Web Development Assignment</strong>: Current assignment 1 web and script programming.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
