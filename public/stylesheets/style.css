@@ -112,3 +112,34 @@ footer {
     bottom: 0;
 }
 
+/* Responsive Design for Tablet (between 768px and 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+}
+
+/* Responsive Design for Mobile (less than 768px) */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        position: relative;
+    }
+}
