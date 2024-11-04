@@ -1,6 +1,7 @@
 /* Styling*/
 
 body {
+
     font-family: Arial, sans-serif;
     background: linear-gradient(45deg, rgb(195, 231, 15), rgb(250, 22, 162)); /* 45-degree linear gradient */
     color: #333;
@@ -37,6 +38,33 @@ main {
     padding: 4rem;
 }
 
+/* Styling for the About Me section */
+.about-me {
+    margin: 20px; /* Adds space around the section */
+    padding: 20px; /* Adds space inside the section */
+    background-color: #fff; /* Background color for better visibility */
+    border-radius: 8px; /* Rounded corners for aesthetic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow effect */
+}
+
+/* Styling for the Contact section */
+.contact {
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for the Projects section */
+.projects {
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
 /* Footer */
 footer {
     background-color: rgb(171, 42, 171);
@@ -47,3 +75,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
