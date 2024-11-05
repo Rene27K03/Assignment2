@@ -1,18 +1,30 @@
 
 <header>
     <!-- Navigation bar -->
-    <nav>
-        <!-- Unordered list for navigation links -->
-        <ul>
-            <!-- List item for the Home link -->
-            <li><a href="/">Home</a></li>
-            <!-- List item for the About Me link -->
-            <li><a href="/about">About Me</a></li>
-            <!-- List item for the Projects link -->
-            <li><a href="/projects">Projects</a></li>
-            <!-- List item for the Contact Me link -->
-            <li><a href="/contact">Contact Me</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+        <div class="container"> <!-- Bootstrap container for responsive padding -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> <!-- Icon for toggling the navbar in mobile view -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Collapsible part of the navbar -->
+                <ul class="navbar-nav"> <!-- Unordered list for navigation links -->
+                    <li class="nav-item"> <!-- List item for Home -->
+                        <a class="nav-link" href="/">Home</a> <!-- Link to the Home page -->
+                    </li>
+                    <li class="nav-item"> <!-- List item for About Me -->
+                        <a class="nav-link" href="/about">About Me</a> <!-- Link to the About Me page -->
+                    </li>
+                    <li class="nav-item"> <!-- List item for Projects -->
+                        <a class="nav-link" href="/projects">Projects</a> <!-- Link to the Projects page -->
+                    </li>
+                    <li class="nav-item"> <!-- List item for Contact Me -->
+                        <a class="nav-link" href="/contact">Contact Me</a> <!-- Link to the Contact Me page -->
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
+
+
 
